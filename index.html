@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <p class="brand-name">Pharmatek</p>
+            </div>
+            <nav class="navbar">
+                <a class="nav-item" href="index.html" id="ordersLink">Orders</a>
+                <a class="nav-item" href="products.html" id="productsLink">Products</a>
+                <a class="nav-item" href="users.html" id="usersLink">Users</a>
+            </nav>
+            <a class="nav-item logout-btn" href="#" id="logoutLink">Logout</a>
+        </div>
+    </header>
+    <main class="container">
+        <h1 class="heading">Orders</h1>
+        <div class="table-wrapper">
+            <div class="filter-wrapper">
+                <h3>Filter Orders</h3>
+                <div class="filter-options">
+                    
+                    <label class="filter-checkbox">
+                        <input type="checkbox" name="New"> New
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" name="InTransit"> InTransit
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" name="Packed"> Packed
+                    </label>
+                    <label class="filter-checkbox">
+                        <input type="checkbox" name="Delivered"> Delivered
+                    </label>
+                </div>
+                <div class="row-count">
+                    <span>Count: </span><span id="orderCount">0</span>
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer Name</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="orderList">
+                    <!-- Orders will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+                <p class="brand-name">Pharmatek</p>
+            </div>
+            <nav class="navbar">
+                <a class="nav-item" href="index.html" id="ordersLink">Orders</a>
+                <a class="nav-item" href="products.html" id="productsLink">Products</a>
+                <a class="nav-item" href="users.html" id="usersLink">Users</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-container">
+        <div id="loginPage" class="page-container">
+            <form class="login-form" id="loginForm">
+                <h1>Sign In</h1>
+                <input class="input-field" type="text" name="username" placeholder="Enter Username" required>
+                <input class="input-field" type="password" name="password" placeholder="Enter Password" required>
+                <button class="button" type="submit">Login</button>
+            </form>
+        </div>
+        <div id="homePage" class="page-container hidden">
+            <h1>Welcome to the Home Page</h1>
+            <p>Select a page from the navigation bar.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

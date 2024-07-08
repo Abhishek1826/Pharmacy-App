@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F7FB;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    width: 100%;
+    padding: 12px 48px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px #ccc;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 24px;
+    height: 28px;
+    margin-right: 8px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 16px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-item.active,
+.nav-item:hover {
+    color: #20B883;
+    border-bottom: 2px solid #20B883;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 16px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0 8px;
+    margin-left: auto; /* Pushes the logout button to the right */
+}
+
+.main-container {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px; /* Adjust margin-top as needed */
+}
+
+.page-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.page-container.hidden {
+    display: none;
+}
+
+.input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #20B883;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #1E9E74;
+}
+
+/* Centering the login form */
+.login-form {
+    width: 500px;
+    margin: 10px auto 0;
+}

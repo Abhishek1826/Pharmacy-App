@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F7FB;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header Styling */
+
+.header {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 24px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    padding: 12px 16px;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: #20B883;
+    border-bottom: 2px solid #20B883;
+}
+
+.logout-btn {
+    margin-left: auto;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.logout-btn:hover {
+    color: #20B883;
+}
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-bar:focus {
+    width: 80%;
+}
+
+/* Style the search button */
+.search-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Styling */
+
+.container {
+    margin-top: 60px; /* Adjust as necessary based on your header height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.table-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 24px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table Styling */
+
+.table {
+    width: calc(100% - 20px); /* Adjust for margin */
+    margin: 0 10px; /* 10px margin from both sides */
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+    padding: 12px 24px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #F6F7FB;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border-bottom: 2px solid #E0E4F0;
+}
+
+.table td {
+    border-bottom: 1px solid #E0E4F0;
+}
+
+/* Filter Styling */
+
+.filter-wrapper {
+    width: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-right: 24px;
+}
+
+.filter-wrapper h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-checkbox {
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.filter-checkbox input {
+    margin-right: 12px;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .filter-wrapper {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .table {
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+}
